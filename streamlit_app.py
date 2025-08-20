@@ -65,6 +65,7 @@ def handle_click(r, c):
             st.session_state.revealed_board[r][c] = 'F'
     # 일반 클릭 모드
     else:
+        # 지뢰를 밟았을 때 게임 오버
         if st.session_state.board[r][c] == '*':
             st.session_state.game_over = True
             st.session_state.revealed_board[r][c] = 'B' # 'B'는 터진 지뢰를 의미
