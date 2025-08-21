@@ -7,7 +7,7 @@ import random
 def init_game():
     st.session_state.rows = 20
     st.session_state.cols = 20
-    st.session_state.mines = 40
+    st.session_state.mines = 50  # 지뢰 개수를 50개로 설정했습니다.
     
     # 지뢰와 숫자가 있는 실제 보드 생성
     board = [[' ' for _ in range(st.session_state.cols)] for _ in range(st.session_state.rows)]
